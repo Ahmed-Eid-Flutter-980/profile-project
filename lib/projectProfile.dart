@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_profile/developerProfile.dart';
 
 class ProjectProfileHome extends StatefulWidget {
   const ProjectProfileHome({Key? key}) : super(key: key);
@@ -347,7 +348,7 @@ class _ProjectProfileHomeState extends State<ProjectProfileHome> {
         padding: const EdgeInsets.all(10.0),
         child: GestureDetector(
           onTap: () {
-
+            Navigator.of(context).push(MaterialPageRoute(builder: (_) => DeveloperProfile()));
           },
           child: Container(
             height: 50,
